@@ -1,32 +1,38 @@
+macro_mh_mac_save: macro_mh_mac_save{
+compatible = "zmk,behavior-macro";
+label = "macro_mh_mac_save";
+#binding-cells = <0>;
+bindings = <&kp LG(S)>;
+};
 macro_mh_mac_refresh: macro_mh_mac_refresh{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_mac_refresh";
 #binding-cells = <0>;
-bindings = <&kp LGUI>, <&kp LSHIFT>, <&kp F5>;
+bindings = <&kp LG(LS(F5))>;
 };
 macro_mh_mac_find: macro_mh_mac_find{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_mac_find";
 #binding-cells = <0>;
-bindings = <&kp LGUI>, <&kp F>;
+bindings = <&kp LG(F)>;
 };
 macro_mh_mac_paste: macro_mh_mac_paste{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_mac_paste";
 #binding-cells = <0>;
-bindings = <&kp LGUI>, <&kp V>;
+bindings = <&kp LG(V)>;
 };
 macro_mh_mac_copy: macro_mh_mac_copy{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_mac_copy";
 #binding-cells = <0>;
-bindings = <&kp LGUI>, <&kp C>;
+bindings = <&kp LG(C)>;
 };
 macro_mh_screenshot: macro_mh_screenshot{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_screenshot";
 #binding-cells = <0>;
-bindings = <&kp LEFT_SHIFT>, <&kp LGUI>, <&kp NUMBER_4>;
+bindings = <&kp LS(LG(N4))>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
