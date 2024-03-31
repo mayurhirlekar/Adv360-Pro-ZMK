@@ -1,3 +1,9 @@
+macro_mh_ide_term: macro_mh_ide_term{
+compatible = "zmk,behavior-macro";
+label = "macro_mh_ide_term";
+#binding-cells = <0>;
+bindings = <&kp LEFT_ALT>, <&kp F12>;
+};
 macro_mh_mac_save: macro_mh_mac_save{
 compatible = "zmk,behavior-macro";
 label = "macro_mh_mac_save";

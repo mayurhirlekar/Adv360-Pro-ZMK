@@ -21,6 +21,7 @@
 / {
   behaviors {
     #include "macros.dtsi"
+    #include "version.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -59,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                           &tog 1                                                    &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans                          &kp F11                                                   &kp F8  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &macro_mh_mac_refresh  &trans  &trans   &none   &none  &trans  &trans  &kp F10  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &none   &none  &trans   &none   &none  &trans   &none    &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans                  &trans  &trans   &trans          &trans  &trans   &trans   &trans   &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                           &tog 1                                                    &mo 3  &kp F7              &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans                          &kp F11                                                   &kp F8  &trans              &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &macro_mh_mac_refresh  &trans  &trans   &none   &none  &trans  &trans  &kp F10  &trans  &macro_mh_ide_term  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &none   &none  &trans   &none   &none  &trans   &none    &none  &trans              &trans  &trans   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                                   &trans  &trans  &trans                  &trans  &trans   &trans                      &trans  &trans   &trans   &trans   &trans
             >;
         };
 
